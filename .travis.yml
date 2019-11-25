@@ -1,3 +1,10 @@
 language: node_js
 before_install:
-  - npm --build-from-source install bcrypt@3.0.6
+- npm --build-from-source install bcrypt@3.0.6
+deploy:
+  provider: heroku
+  api_key:
+    secure: nBFyK/JvlmXCsKQNzNMUJFkMUG8nGkfv6mZzhSD+rpEwG81gyVG4MHPTk0roEiTqcI1t5WPyOXiym3u+RLrxzB8VjV2XzwPlNA0hoLnT6F0cinisyBfIMZhm2MjNCus004S1++5C/7DIOR/f1Jy3gjDqvhGl+sdiefgHwNh/OEUIH69e9osqFAdyF5y8TbyEGqpOIweUrFRfPVpD/1YmH49+21ghoBfukrqbpDahxJgdNvvW4mF3o80SljSVyTf1VYNSefSJt06DpXP8IJmPmPlgAuSeJ6KdFFTW6GInyVddYzIfQS0H5angQwWrEMiqxTMCgYwPiTd5UcQtjDBI4aOykTQzxWI+gxBsn9tRNkXW6bYeMj40+B8ZPz9RV84a1jgKKh78ggDU85qyen44+TqEtTwvV113sXIFV0BpO2ta1Heq0jhBLrr+h3pAvxb23wC/PASKn+jisl5MxkvIfIIRHTTKMWv17naQbMln3bIRwUJZA0Tq/Rwm3Uv6n50PGLm5MG/3mXcz80ogdlf54F64jQy3uxyPam9EEy4mOlAZL7O83hDKrrYtzGG33dxtHXW9T6JvlCuZMBQqmx+bkpau5aQIXxZQtyJ8q9olCDW5WqRRvcYQ/hFxryLsOec1I0GqcKkJ8GbjoOVouM/1uyatcs59g9Fv2mKg8Z9uLgA=
+  app: teamwork-backend
+  on:
+    repo: successtar/teamwork-backend
