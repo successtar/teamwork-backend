@@ -4,7 +4,7 @@
   "description": "DevCTrainingWithAndela Capstone Project. Teamwork is an internal social network for employees of an organization. The goal of this application is to facilitate more interaction between colleagues and promote team bonding.",
   "main": "index.js",
   "scripts": {
-    "test": "jasmine"
+    "test" : "jasmine-node specs/*spec.js"
   },
   "repository": {
     "type": "git",
@@ -21,7 +21,8 @@
     "eslint": "^6.6.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.18.2",
-    "jasmine": "^3.5.0"
+    "jasmine": "^3.5.0",
+    
   },
   "dependencies": {
     "bcrypt": "^3.0.6",

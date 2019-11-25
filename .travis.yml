@@ -2,4 +2,4 @@ language: node_js
 sudo: required
 before_install:
   - npm --build-from-source install bcrypt@3.0.6
-  - npm install -g jasmine
+  - npm i -g jasmine-node
