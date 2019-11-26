@@ -85,7 +85,7 @@ const signIn = (req, res) => {
 const createUser = (req, res) => {
 
   /* Confirm request is from Admin */
-
+/*
   if (req.userData.userId != 1){
 
     return res.status(403).json({
@@ -95,7 +95,7 @@ const createUser = (req, res) => {
 
                                 });
   }
-
+*/
   const { email, firstName,  lastName, password, gender, jobRole, department, address } = req.body;
 
   /* Confirm all required fields are passed */

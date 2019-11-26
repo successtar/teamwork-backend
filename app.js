@@ -39,7 +39,7 @@ app.post('/api/v1/auth/signin', user.signIn);
 
 /* Create New User Route */
 
-app.post('/api/v1/auth/create-user', middleware.checkToken, user.createUser);
+app.post('/api/v1/auth/create-user', user.createUser);
 
 /* New gif post */
 
