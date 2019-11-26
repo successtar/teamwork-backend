@@ -14,6 +14,8 @@ const db = new Pool({
                         password: config.dbPass,
 
                         port: config.dbPort,
+
+                        ssl: true,
                     });
 
 module.exports = db;

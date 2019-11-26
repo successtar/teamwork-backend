@@ -1,13 +1,13 @@
 /* Config File */
 
 module.exports = {
-                    dbUser: 'hollatags',
+                    dbUser: 'jussyykngcoxwz',
                     
-                    dbHost: 'localhost',
+                    dbHost: 'ec2-54-225-173-42.compute-1.amazonaws.com',
                     
-                    db: 'api',
+                    db: 'da5mt455s5cmkn',
                     
-                    dbPass: 'hollatags',
+                    dbPass: '8c90d8565873224972ed8a955a722045f238ee579a9ad9a6afae7f0d95a4d9a3',
                     
                     dbPort: 5432,
 
