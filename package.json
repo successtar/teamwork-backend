@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "DevCTrainingWithAndela Capstone Project. Teamwork is an internal social network for employees of an organization. The goal of this application is to facilitate more interaction between colleagues and promote team bonding.",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "start": "node index"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/successtar/teamwork-backend.git"
