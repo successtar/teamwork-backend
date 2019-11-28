@@ -39,7 +39,7 @@ app.post('/api/v1/auth/signin', user.signIn);
 
 /* Create New User Route */
 
-app.post('/api/v1/auth/create-user', user.createUser);
+app.post('/api/v1/auth/create-user', middleware.checkToken, user.createUser);
 
 /* New gif post */
 
@@ -82,5 +82,16 @@ app.post('/api/v1/articles/:id/comment', middleware.checkToken, comment.articleC
 app.get('/api/v1/feed', middleware.checkToken, feed.all);
 
 
+/* Error 404 */
+
+app.use((req, res, next) => {
+
+  res.status(404).json({
+                          success: "error",
+
+                          error: "Invalid api endpoint"
+                      });
+
+});
 
 module.exports = app;

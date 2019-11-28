@@ -14,11 +14,11 @@ const checkToken = (req, res, next) => {
 
         if (error) {
             
-            return res.json({
-                                success: "error",
+            return res.status(403).json({
+                                          success: "error",
 
-                                error: 'Token is not valid'
-                            });
+                                          error: 'Token is not valid'
+                                      });
         } 
         else {
 
@@ -30,11 +30,11 @@ const checkToken = (req, res, next) => {
   } 
   else {
     
-    return res.json({
-                        success: "error",
-    
-                        error: "Auth token is not supplied"
-                    });
+    return res.status(403).json({
+                                  success: "error",
+              
+                                  error: "Auth token is not supplied"
+                              });
   }
 };
 
