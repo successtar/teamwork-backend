@@ -51,11 +51,15 @@ chai.use(chaiHttp);
 
 describe("TEAMWORK API", function(){
 
+    /* Increase execution timeout to 10sec */
+    
+    this.timeout(10000); 
+
     /* Test for ARTICLE/GIF OPERATIONS */
 
     describe ("GET ARTICLE/GIF OPERATIONS", function(){
 
-        it("Fetch all post and gifs", done=>{
+        it("Fetch all post and gifs", done => {
 
             chai.request(server)
                 .get("/api/v1/feed")
