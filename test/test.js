@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const db = require('../model/db');
 
 const assert = require("assert");
