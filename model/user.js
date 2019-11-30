@@ -218,13 +218,6 @@ const createUser = (req, res) => {
   })
 }
 
-
-
-<<<<<<< HEAD
-
-
-=======
->>>>>>> develop
 module.exports = {
                     signIn,
                     
