@@ -1,23 +1,24 @@
 /* Config File */
+/* Credentials and secret keys available in .env file */
 
 module.exports = {
-                    dbUser: 'jussyykngcoxwz',
+                    dbUser: process.env.dbUser,
                     
-                    dbHost: 'ec2-54-225-173-42.compute-1.amazonaws.com',
+                    dbHost: process.env.dbHost,
                     
-                    db: 'da5mt455s5cmkn',
+                    db: process.env.db,
                     
-                    dbPass: '8c90d8565873224972ed8a955a722045f238ee579a9ad9a6afae7f0d95a4d9a3',
+                    dbPass: process.env.dbPass,
                     
-                    dbPort: 5432,
+                    dbPort: process.env.dbPort,
 
-                    jwtKey: 'andeladvc',
+                    jwtKey: process.env.jwtKey,
                     
-                    jwtExpire : '24h',
+                    jwtExpire : process.env.jwtExpire,
 
-                    cdnName: 'successtar',
+                    cdnName: process.env.cdnName,
 
-                    cdnkey: '391787759482598',
+                    cdnkey: process.env.cdnkey,
                     
-                    cdnSecret: 'ORdIgwex2fZD7c3h8IsbIH6RZXQ'
+                    cdnSecret: process.env.cdnSecret
                 };
