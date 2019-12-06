@@ -33,6 +33,10 @@ app.use((req, res, next) => {
 
 });
 
+/* Cross Origin options request */
+
+app.options('*', (req, res, next) => res.status(200).json());
+
 /* login Route */
 
 app.post('/api/v1/auth/signin', user.signIn);
@@ -80,7 +84,6 @@ app.post('/api/v1/articles/:id/comment', middleware.checkToken, comment.articleC
 /* View all article and gif */
 
 app.get('/api/v1/feed', middleware.checkToken, feed.all);
-
 
 /* Error 404 */
 

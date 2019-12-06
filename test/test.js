@@ -40,11 +40,13 @@ before(function() {
                 { algorithm: 'HS256', expiresIn: config.jwtExpire});
 });
 
-/* Delete Comment made by the test */
+/* Delete Comment made and the new user created by the test  */
 
 after(function() {
 
     db.query('DELETE FROM comment WHERE id IN (SELECT id FROM comment ORDER BY id DESC LIMIT 2)');
+
+    db.query('DELETE FROM users WHERE id IN (SELECT id FROM users where id <> 1 ORDER BY id DESC LIMIT 1)');
 });
 
 
@@ -56,6 +58,28 @@ describe("TEAMWORK API", function(){
     /* Increase execution timeout to 10sec */
     
     this.timeout(10000); 
+
+
+    /* Test for Cross Origin Request */
+
+    describe ("TEST FOR CROSS ORIGIN REQUEST", function(){
+
+        it("Confirm Cross Origin is returning status ok", done => {
+
+            chai.request(server)
+                .options("/api/v1/")
+                .end((err,res)=>{
+                    
+                    res.should.have.status(200);
+                    
+                    done()
+                })
+        });
+
+    })
+
+
+
 
     /* Test for ARTICLE/GIF OPERATIONS */
 
