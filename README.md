@@ -6,4 +6,4 @@ DevCTrainingWithAndela Capstone Project. Teamwork is an internal social network 
 
 This is an api application for the Teamwork project built with Nodejs and postgress using JSON Web token for authentication, Cloudinary for file storage, Mocha with Chai for testing, Coveralls for testing coverage, Travis CI for auto testing and deployment. The project is hosted on Heroku and all endpoints available via this url https://tmwk-api.herokuapp.com/api/v1/
 
-The documentation for all the available endpoints for the project is available on postman via https://documenter.getpostman.com/view/7150344/SW7ezR5t
+The documentation for all the available endpoints for the project is available on postman via https://documenter.getpostman.com/view/7150344/SzmZbf2J
